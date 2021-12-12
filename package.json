@@ -12,7 +12,8 @@
     ]
   },
   "scripts": {
-    "build": "rm -rf dist && mkdir dist &&  babel src/. -d dist --copy-files"
+    "build": "rm -rf dist && mkdir dist &&  babel src/. -d dist --copy-files",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
