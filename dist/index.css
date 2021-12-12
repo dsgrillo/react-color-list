@@ -1,7 +1,7 @@
 .colorPickerInput {
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   }
-  
+
   .colorSwatchCard {
     flex-grow: 1;
     height: 75px;
@@ -12,12 +12,12 @@
     align-items: center;
     /* position: absolute; */
     /* bottom: 0; */
-    margin-top: 20px;
+    /*margin-top: 20px;*/
   }
   .colorSwatchCard.hoverable {
     cursor: pointer;
   }
-  
+
   .colorSwatchCardContainer:hover > .colorSwatchCard.hoverable {
     height: 90px;
     margin-top: 5px;
@@ -26,10 +26,6 @@
   }
   .colorSwatchCardContainer {
     position: relative;
-    /* width: 90px; */
-    /* margin-left: 2px;
-    margin-right: 2px; */
-    height: 100;
     flex-grow: 1;
     background-color: transparent;
   }
@@ -46,17 +42,17 @@
   .colorPickerPopup {
     padding: 0 !important;
   }
-  
+
   .colorSwatchContainerWrapper {
     overflow: hidden;
     width: max-content;
     display: inline-block;
   }
-  
+
   .colorSwatchWrapper {
     z-index: 1300 !important;
   }
-  
+
   .colorSwatchLabel {
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 500;
@@ -65,4 +61,3 @@
     text-transform: uppercase;
     margin: 0;
   }
-  
