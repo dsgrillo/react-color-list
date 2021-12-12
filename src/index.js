@@ -108,7 +108,7 @@ export default function ColorList({ colors, onChange: setColors, maxColors, minC
 
     const onSortEnd = ({ oldIndex, newIndex }) => {
         setDragSwatch(null)
-        setColors(() => arrayMove(colors, oldIndex, newIndex), "moved color from index " + oldIndex + " to index " + newIndex);
+        setColors(arrayMove(colors, oldIndex, newIndex), "moved color from index " + oldIndex + " to index " + newIndex);
     }
 
     const getClassName = (isDragging) => {
@@ -327,7 +327,7 @@ PickerWrapper.propTypes = {
     removeButtonProps: PropTypes.object,
     saveButtonProps: PropTypes.object,
     SaveButton: PropTypes.elementType ,
-    RemoveButton: PropTypes.elementType 
+    RemoveButton: PropTypes.elementType
 }
 
 ColorSwatch.propTypes = {
